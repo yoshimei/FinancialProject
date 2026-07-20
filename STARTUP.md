@@ -9,7 +9,7 @@
 若沒有，可以使用docker來起，我自己手邊因為不是windows，所以是使用docker搭配Vscode的SQL Server (mssql)套件，這裡提供參考指令：
 
 ```bash
-docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=<自訂密碼>" \
+docker run -e "ACCEPT_EULA=Y" -e 'MSSQL_SA_PASSWORD=<自訂密碼>' \
   -p 1433:1433 --name financial-project-mssql \
   -d mcr.microsoft.com/mssql/server:2025-latest
 ```
