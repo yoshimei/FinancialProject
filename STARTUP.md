@@ -13,7 +13,7 @@ docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=<自訂密碼>" \
   -p 1433:1433 --name financial-project-mssql \
   -d mcr.microsoft.com/mssql/server:2025-latest
 ```
-# 密碼至少8碼含大小寫+數字/符號
+密碼至少8碼含大小寫+數字/符號
 
 ## Step 2：建立資料庫結構
 
