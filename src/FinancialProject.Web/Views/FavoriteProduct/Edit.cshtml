@@ -1,0 +1,18 @@
+@model FavoriteProductFormViewModel
+@{
+    ViewData["Title"] = "編輯喜好商品";
+}
+
+<h1 class="h3 mb-3">編輯喜好金融商品</h1>
+
+<div class="row">
+    <div class="col-12 col-lg-6">
+        <form asp-controller="FavoriteProduct" asp-action="Edit" asp-route-sn="@Model.Sn" method="post">
+            <partial name="_FormFields" />
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

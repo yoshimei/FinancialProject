@@ -1,0 +1,17 @@
+# .NET build artifacts
+**/bin/
+**/obj/
+
+# IDE / OS
+.vs/
+*.user
+.DS_Store
+
+# 本機真實連線字串（含密碼），只保留 appsettings.Development.json.example 進版控
+src/FinancialProject.Web/appsettings.Development.json
+
+# SQL Server 實體資料檔（若未來 bind-mount 進來）
+mssql_data/
+
+# Claude Code 本機個人設定
+.claude/settings.local.json

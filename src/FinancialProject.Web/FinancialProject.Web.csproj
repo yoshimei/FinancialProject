@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <ItemGroup>
+    <ProjectReference Include="..\FinancialProject.Common\FinancialProject.Common.csproj" />
+    <ProjectReference Include="..\FinancialProject.Business\FinancialProject.Business.csproj" />
+    <ProjectReference Include="..\FinancialProject.Data\FinancialProject.Data.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>e49d7d6e-5b76-4ceb-ab4d-59b68c35fbab</UserSecretsId>
+  </PropertyGroup>
+
+</Project>

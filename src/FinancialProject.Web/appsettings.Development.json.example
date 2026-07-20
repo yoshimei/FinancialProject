@@ -1,0 +1,11 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "ConnectionStrings": {
+    "FinancialDb": "Server=<host>,<port>;Database=FinancialDB;User Id=<帳號>;Password=<密碼>;TrustServerCertificate=True;Encrypt=True;"
+  }
+}

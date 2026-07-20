@@ -1,0 +1,39 @@
+@model FavoriteProductDeleteViewModel
+@{
+    ViewData["Title"] = "刪除喜好商品";
+}
+
+<h1 class="h3 mb-3">刪除喜好金融商品</h1>
+<p class="text-danger">確定要刪除以下這筆喜好商品嗎？此操作無法復原。</p>
+
+<div class="card mb-3" style="max-width: 480px;">
+    <div class="card-body">
+        <dl class="row mb-0">
+            <dt class="col-sm-4">產品名稱</dt>
+            <dd class="col-sm-8">@Model.ProductName</dd>
+
+            <dt class="col-sm-4">價格</dt>
+            <dd class="col-sm-8">@Model.Price.ToString("N2")</dd>
+
+            <dt class="col-sm-4">手續費率</dt>
+            <dd class="col-sm-8">@Model.FeeRate.ToString("P2")</dd>
+
+            <dt class="col-sm-4">購買數量</dt>
+            <dd class="col-sm-8">@Model.Qty</dd>
+
+            <dt class="col-sm-4">預計扣款總金額</dt>
+            <dd class="col-sm-8">@Model.TotalAmount.ToString("N2")</dd>
+
+            <dt class="col-sm-4">總手續費用</dt>
+            <dd class="col-sm-8">@Model.TotalFee.ToString("N2")</dd>
+
+            <dt class="col-sm-4">扣款帳號</dt>
+            <dd class="col-sm-8">@Model.Account</dd>
+        </dl>
+    </div>
+</div>
+
+<form asp-controller="FavoriteProduct" asp-action="Delete" asp-route-sn="@Model.Sn" method="post">
+    <button type="submit" class="btn btn-danger">確定刪除</button>
+    <a asp-action="Index" class="btn btn-outline-secondary">取消</a>
+</form>
